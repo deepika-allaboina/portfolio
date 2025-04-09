@@ -5,10 +5,10 @@
       margin-top: 0px;
       padding: 0;
       flex-direction: column-reverse;
-      width: 100%;
+      width: 80vw;
       /* border: 2px solid rebeccapurple; */
     }
-    nav{
+    nav,.cursor{
       display:none;
     }
     .skills{
@@ -26,7 +26,11 @@
       display: flex;      
     }
     
-    
+    section{
+      /* border: 2px solid red; */
+      width: 80vw;
+      
+    }
     
   }
 
