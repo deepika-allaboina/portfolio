@@ -1,0 +1,246 @@
+
+.resume-button {
+  --bg: #000;
+  --hover-bg: white;
+  --hover-text: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid var(--bg);
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.resume-button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+}
+
+.resume-button:active {
+  transform: translate(0);
+  box-shadow: none;
+}
+
+body{
+    /* background-color: black;  */
+     /* color: #fff; */
+    margin: 0;
+}
+
+nav {
+  height: 14vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 0px 60px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+  box-sizing: border-box;
+  
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+nav a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.home {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14vh; /* Push content down */
+  box-sizing: border-box;
+  
+
+}
+body{
+  /* background-color: burlywood; */
+}
+section, .home{
+  width: 80%;
+  margin: auto;
+}
+.intro-imgdiv{
+  height: 80%;
+  margin: auto;
+}
+
+.girl{
+  height: 400px;
+  transform: translateY(-50px);
+  
+  /* animation-name: move; */
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  transition:all 1s;
+
+}
+.girl{
+/* filter: invert(100%); */
+
+}
+.flex-row{
+  display: flex;
+
+}
+
+@keyframes  move{
+  0%{
+      transform: translateY(-5px);
+  }
+  50%{
+      transform: translateY(0px);
+  }
+  100%{
+      transform: translateY(5px);
+  }
+
+}
+
+.sec-2{
+  color: black;
+  
+  
+}
+#my-skills-h2{
+  font-size: 30px;text-align: center;
+}
+#my-skills-h2:hover{
+  text-decoration: underline;
+}
+.skills{
+  display: flex;
+  flex-direction: row; 
+  /* border: 2px solid gray; */
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.birdimg{
+  /* border: 2px solid blue; */
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 600px; /* optional */
+  margin: 0 auto;
+}
+
+
+.skills-grid>div{
+  height:120px;
+  width: 120px;
+  border: 2px solid black;
+  color:black;
+  font-size: 30px;
+  background-color: white;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px;
+  box-sizing: border-box;
+  
+}
+.skills-grid>div:hover{
+  filter: invert(100%);
+}
+.skill-name{
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+
+body {
+   /* Hide default cursor */
+}
+
+.cursor {
+  position: fixed;
+  width: 30px;
+  height:30px;
+  background-color: white;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out, background-color 0.2s ease-in-out;
+  mix-blend-mode: difference; /* Helps invert colors dynamically */
+  z-index: 1000;
+}
+.name{
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  /* border: 2px solid green; */
+}
+.introduction{
+  /* border: 2px solid red; */
+}
+
+.out{
+  /* border: 2px solid yellowgreen; */
+  font-size: 40px;
+  color: #000;
+  --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  /* opacity: 0; */
+  -webkit-text-stroke: 1px black;
+  margin: 0;
+
+}
+
+.sora-so {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  
+}
+*{
+  font-family: "Sora", sans-serif;
+  box-sizing: border-box;
+}
+.social-links div img{
+    height: 15px;
+    margin: 0;
+}
+.social-links button{
+  background-color: #fff;
+  height: 30px;
+  width: 30px;
+  border-radius: 10%;
+  padding: 0;
+  border: 1px solid ;
+}
+.social-links a{
+  text-decoration: none; 
+}
