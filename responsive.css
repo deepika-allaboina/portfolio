@@ -1,12 +1,15 @@
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 550px) {
     .home {
       margin-top: 0px;
       padding: 0;
       flex-direction: column-reverse;
       width: 80vw;
-      /* border: 2px solid rebeccapurple; */
+      border: 2px solid rebeccapurple;
+    }
+    .links{
+      justify-content: center;
     }
     nav,.cursor{
       display:none;
@@ -20,21 +23,22 @@
       grid-template-columns: repeat(2, 1fr); /* 4 equal columns */
       grid-template-rows: repeat(6, 1fr);
       gap: 30px;
-    
+      row-gap: 10px;
+      column-gap: 10px;
     }
     .menu-container {
-      display: flex;      
+      display: flex; 
     }
     
     section{
-      /* border: 2px solid red; */
+      border: 2px solid red;
       width: 80vw;
-      
+      padding-top: 6rem;
     }
     
   }
 
-@media (min-width: 400px) and (max-width: 720px) {
+@media (min-width: 550px) and (max-width: 720px) {
     .home {
       width: 100vw;
       flex-direction: row;

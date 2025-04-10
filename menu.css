@@ -16,7 +16,9 @@
     display: none;
     z-index: 999;
   }
-  
+  .girl{
+    transform: translateX(-20px);
+  }
   .page-link {
     outline: 0 !important;
     border: 0 !important;

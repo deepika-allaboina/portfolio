@@ -57,6 +57,7 @@ nav a {
 }
 .home {
   /* border: 2px solid red; */
+  width: 80vw ;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -64,13 +65,11 @@ nav a {
   padding-top: 14vh; /* Push content down */
   box-sizing: border-box;
 }
-section,
-.home {
-  width: 80%;
+section,.home {
   margin: auto;
 }
 .intro-imgdiv {
-  height: 80%;
+  
   margin: auto;
 }
 .girl {
@@ -110,6 +109,9 @@ section,
   box-sizing: border-box;
   margin: auto;
 }
+.sec-2{
+  margin: auto;
+}
 
 .birdimg {
   /* border: 2px solid blue; */
@@ -129,7 +131,6 @@ section,
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 20px;
-  width: 100%;
   max-width: 600px; /* optional */
   margin: 0 auto;
 }
@@ -151,6 +152,14 @@ section,
 }
 .skills-grid > div:hover {
   filter: invert(100%);
+}
+.skills-grid>div>img~h6{
+  /* border: 2px solid red; */
+  display: none;
+  transition: all 1s;
+}
+.skills-grid>div:hover>img+h6{
+  display: block;
 }
 .skill-name {
   margin: 0px;
