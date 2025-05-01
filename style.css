@@ -128,12 +128,21 @@ section,.home {
   transition: all 1s;
 }
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 20px;
-  max-width: 600px; /* optional */
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  gap: 20px; /* Space between items */
   margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
+
+.skills-grid .skill {
+  flex: 1 1 120px; /* Minimum width for each item is 120px */
+  max-width: calc(25% - 20px); /* Default 4 items per row on large screens */
+}
+
+
 
 .skills-grid > div {
   height: 120px;

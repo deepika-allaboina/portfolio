@@ -18,34 +18,33 @@
       flex-direction: column;
       gap: 0;
     }
-    .skills-grid{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); /* 4 equal columns */
-      grid-template-rows: repeat(6, 1fr);
-      gap: 30px;
-      row-gap: 10px;
-      column-gap: 10px;
-    }
     .menu-container {
       display: flex; 
     }
-    
     section{
-      border: 2px solid red;
       width: 80vw;
       padding-top: 6rem;
     }
     
   }
 
-@media (min-width: 550px) and (max-width: 720px) {
+@media (min-width: 550px) and (max-width: 730px) {
     .home {
       width: 100vw;
       flex-direction: row;
       padding: 20px;
     }
+    .skills{
+      flex-direction: column;
+      gap: 0;
+    }
     
-    
+  }
+  @media (min-width: 731px){
+    .skills{
+      flex-direction: row;
+      gap: 0;
+    }
   }
   
 
